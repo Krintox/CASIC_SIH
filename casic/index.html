@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Advertisement Form Submission</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Advertisement Form</h1>
+        <form action="advertise.php" method="POST">
+            <input type="text" name="name" placeholder="Full Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="text" name="organisation" placeholder="Name of Organisation" required>
+            <input type="text" name="linked_profile" placeholder="Linked In Page of Organisation">
+            <select name="state" >
+                <option value='odisha'>Odisha</option>
+                <option value='west_bengal'>west Bengal</option>
+                <option value='bihar'>Bihar</option>
+                <option value='maharahtra'>Maharashtra</option>
+                <option value='kerela'>Kerela</option>
+                <option value='gujarat'>Gujarat</option>
+                <option value='rajasthan'>Rajasthan</option>
+                <option value='tamil_naidu'>Tamil Naidu</option>
+            </select>
+            <input type="text" name="description1" placeholder="description of  post" required>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+    
+</body>
+</html>
